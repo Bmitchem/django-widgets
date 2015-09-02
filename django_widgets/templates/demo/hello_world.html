@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page</title>
+    {{ widget.render_js|safe }}
+    {{ widget.render_css|safe }}
+</head>
+<body>
+<span> outside widget </span>
+    {{ widget|safe }}
+
+<span> custom widget </span>
+{{ custom_widget|safe }}
+</body>
+</html>
